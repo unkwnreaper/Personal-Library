@@ -47,7 +47,7 @@ module.exports = function (app) {
     .delete(async function(req, res){
       //if successful response will be 'complete delete successful'
       try {
-        //await libraryModel.deleteMany({});
+        await libraryModel.deleteMany({});
         res.json("complete delete successful");
       } catch (error) {
         res.json("could not delete");
